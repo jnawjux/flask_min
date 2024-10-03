@@ -1,5 +1,67 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Hello World</h1>
+
+<!-- TailwindCSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Navigation Bar -->
+<nav class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-lg font-bold">Logo</div>
+    <div>
+      <input type="text" placeholder="Search..." class="p-2 rounded">
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mx-auto mt-8">
+  <!-- Row 1 -->
+  <div class="grid grid-cols-3 gap-4 mb-8">
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover1.jpg" alt="Comic Cover 1" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 1</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover2.jpg" alt="Comic Cover 2" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 2</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover3.jpg" alt="Comic Cover 3" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 3</h2>
+    </div>
+  </div>
+  <!-- Row 2 -->
+  <div class="grid grid-cols-3 gap-4 mb-8">
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover4.jpg" alt="Comic Cover 4" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 4</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover5.jpg" alt="Comic Cover 5" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 5</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover6.jpg" alt="Comic Cover 6" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 6</h2>
+    </div>
+  </div>
+  <!-- Row 3 -->
+  <div class="grid grid-cols-3 gap-4 mb-8">
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover7.jpg" alt="Comic Cover 7" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 7</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover8.jpg" alt="Comic Cover 8" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 8</h2>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <img src="cover9.jpg" alt="Comic Cover 9" class="w-full h-48 object-cover rounded">
+      <h2 class="mt-2 text-lg font-bold">Comic Title 9</h2>
+    </div>
+  </div>
+</div>
+
 {% endblock content %}
